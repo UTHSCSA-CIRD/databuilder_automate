@@ -2,10 +2,7 @@
 
 ## Requirements
 
-Deployment of new data builder UI and back end changes.
-
-**TODO**: finish deployment section below...
-
+See "Deployment" section below.
 
 ## Wrapper scripts
 
