@@ -44,7 +44,7 @@ These are intended to be run from cron, but can also be kicked-off manually (see
         $ python run_job.py /path/to/job_file.json
         
 
-* *run_job.mk* - Make file to run data builder
+* run_job.mk - Make file to run data builder
 
     ### Configuration  
         config - /path/to/data_builder.conf  
