@@ -65,11 +65,16 @@ Email from data builder success/fail. Email from finisher fail.
 * Deploy CIRD/databuilder (overwrite regular data builder files)
 * Back up/archive data builder jobs queue
 * Clear data builder jobs queue
-* Deploy CIRD/databuilder_automate
+* Deploy CIRD/databuilder_automate (as demo user)
   * mkdir -p /home/demo/databuilder_output
   * mkdir -p /home/demo/databuilder_jobs
   * Configure data_builder.conf
-* As user who will run the scripts; typically this is written to /var/spool/cron/username.  
+  * Oracle / cx_Oracle: add to .bashrc
+    export LD_LIBRARY_PATH=/usr/lib/oracle/12.1/client64/lib
+* As user who will run the scripts (demo); typically this is written to /var/spool/cron/username.  
+  * Oracle / cx_Oracle:
   $ crontab -e  
+  */5 * * * * source /home/demo/.bashrc && python /path/to/run_[concurrent|sequential].py  
+  * Postgres / psycopg2:
   */5 * * * * python /path/to/run_[concurrent|sequential].py  
 
