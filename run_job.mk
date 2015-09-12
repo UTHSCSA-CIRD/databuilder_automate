@@ -1,4 +1,4 @@
-config=/home/demo/data_builder_cron/data_builder.conf
+config=/home/demo/databuilder_automate/data_builder.conf
 TOP=/usr/local/heron_extract
 PYTHON=python
 

@@ -9,7 +9,7 @@ if cwd == '': cwd = '.'
 logfile = '/var/log/data_builder/runjob.log'
 pidfile = '/tmp/databuilder.pid'
 filedir = '/var/log/data_builder/queue'
-prepdir = '/home/demo/data_builder_jobs'
+prepdir = '/home/demo/databuilder_jobs'
 # Standard configuration - probably does not need changes
 runjob = '{0}/run_job.py'.format(cwd)
 
