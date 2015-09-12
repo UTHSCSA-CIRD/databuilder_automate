@@ -7,8 +7,8 @@ if cwd == '': cwd = '.'
 logfile = '/var/log/data_builder/runjob.log'
 finish = '/usr/local/datafinisher/df.py'
 dbdir = '/home/demo/databuilder_output'
-sender = 'bos@uthscsa.edu'
-recipients = ['bos@uthscsa.edu'] # must also recipient in dfbuilder.py
+sender = 'informatics@uthscsa.edu'
+recipients = ['bos@uthscsa.edu', 'bokov@uthscsa.edu'] # must also recipient in dfbuilder.py
 # Standard configuration - probably does not need changes
 mkfile = '{0}/run_job.mk'.format(cwd)
 
