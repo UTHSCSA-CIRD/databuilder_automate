@@ -69,12 +69,12 @@ Email from data builder success/fail. Email from finisher fail.
   * mkdir -p /home/demo/databuilder_output
   * mkdir -p /home/demo/databuilder_jobs
   * Configure data_builder.conf
-  * Oracle / cx_Oracle: add to .bashrc
+  * Oracle / cx_Oracle: add to .bashrc  
     export LD_LIBRARY_PATH=/usr/lib/oracle/12.1/client64/lib
 * As user who will run the scripts (demo); typically this is written to /var/spool/cron/username.  
-  * Oracle / cx_Oracle:
+  * Oracle / cx_Oracle:  
   $ crontab -e  
   */5 * * * * source /home/demo/.bashrc && python /path/to/run_[concurrent|sequential].py  
-  * Postgres / psycopg2:
+  * Postgres / psycopg2:  
   */5 * * * * python /path/to/run_[concurrent|sequential].py  
 
