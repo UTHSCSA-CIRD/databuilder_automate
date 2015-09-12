@@ -66,6 +66,9 @@ Email from data builder success/fail. Email from finisher fail.
 * Back up/archive data builder jobs queue
 * Clear data builder jobs queue
 * Deploy CIRD/databuilder_automate
+  * mkdir -p /home/demo/databuilder_output
+  * mkdir -p /home/demo/databuilder_jobs
+  * Configure data_builder.conf
 * As user who will run the scripts; typically this is written to /var/spool/cron/username.  
   $ crontab -e  
   */5 * * * * python /path/to/run_[concurrent|sequential].py  
