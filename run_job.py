@@ -5,8 +5,10 @@ if cwd == '': cwd = '.'
 
 # User configuration - change these settings if needed
 logfile = '/var/log/data_builder/runjob.log'
-finish = '/usr/local/datafinisher_cat/df.py'
-dbdir = '/home/demo/data_builder_output'
+#finish = '/usr/local/datafinisher_cat/df.py'
+finish = '/usr/local/datafinisher/df.py'
+#dbdir = '/home/demo/data_builder_output'
+dbdir = '/home/demo/databuilder_output'
 sender = 'bos@uthscsa.edu'
 recipients = ['bos@uthscsa.edu'] # must also recipient in dfbuilder.py
 # Standard configuration - probably does not need changes
